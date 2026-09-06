@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Legends: Z-A - Donuts Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Prompt', sans-serif !important;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen">
+
+    <!-- Header แยกอยู่นอกสุดเพื่อให้แถบกว้างเต็มขอบจอ -->
+    <header class="bg-slate-800 border-b border-slate-700 p-4 sticky top-0 z-50 shadow-md w-full">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+            
+            <!-- Logo / Title -->
+            <h1 class="text-xl md:text-2xl font-bold text-amber-400 flex items-center gap-2">
+                🍩 Ansha's Donut Simulator
+            </h1>
+
+            <!-- Navigation Menu -->
+            <nav class="flex items-center gap-1 sm:gap-2 bg-slate-900/60 p-1.5 rounded-xl border border-slate-700/80">
+                <a href="home.html" class="px-3 py-1.5 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800 transition flex items-center gap-1.5">
+                    <i class="fa-solid fa-house text-amber-400"></i> หน้าแรก
+                </a>
+                <a href="donuts.html" class="px-3 py-1.5 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800 transition flex items-center gap-1.5">
+                    <i class="fa-solid fa-circle-dot text-pink-400"></i> โดนัท
+                </a>
+                <a href="simulator.html" class="px-3 py-1.5 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800 transition flex items-center gap-1.5">
+                    <i class="fa-solid fa-flask text-sky-400"></i> ลองทำ
+                </a>
+            </nav>
+
+                <span class="text-xs bg-amber-500/20 text-amber-300 border border-amber-500/30 px-3 py-1 rounded-full hidden sm:inline-block">
+                    Mega Dimension DLC
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <!-- เนื้อหาหลักถูกจำกัดความกว้างและจัดกึ่งกลาง -->
+    <main class="max-w-5xl mx-auto space-y-8 p-4 md:p-8">
+
+        <!-- Content Section -->
+        <article class="space-y-6 text-slate-200 leading-relaxed bg-slate-800/50 p-6 rounded-xl border border-slate-700/60 shadow-lg">
+            <p>
+                <strong class="text-amber-300">โดนัท</strong> เป็นไอเทมอาหารชนิดพิเศษที่ทำขึ้นโดย <span class="text-sky-300 font-medium">"อันชา" (Ansha)</span> สำหรับใช้ให้ฮูปา (Hoopa) กินเพื่อปลุกพลัง ซึ่งช่วยให้มันสามารถเปิดมิติเชื่อมต่อสู่มิติไฮเปอร์สเปซได้ โดยไอเทมนี้ถูกเพิ่มเข้ามาครั้งแรกในเนื้อหาเสริม (DLC) "Mega Dimension" ของเกม Pokémon Legends: Z-A
+            </p>
+
+            <p>
+                การให้โดนัทแก่ฮูปาเป็นสิ่งจำเป็นในการเปลี่ยนรอยแยกมิติที่พบในเมืองลูมิโอส (Lumiose City) ให้กลายเป็นประตูมิติไฮเปอร์สเปซ เพื่อเปิดเส้นทางไปสู่พื้นที่ต่างๆ ของ "ลูมิโอสแห่งมิติไฮเปอร์สเปซ" (Hyperspace Lumiose) นอกจากนี้ ชนิดของผลเบอร์รีที่นำมาใช้ทำโดนัทจะส่งผลให้เกิดบัฟหรือพลังพิเศษที่แตกต่างกันออกไปขณะอยู่ในมิติไฮเปอร์สเปซ เช่น ช่วยเพิ่มพลังต่อสู้ให้กับโปเกมอนของผู้เล่น ทั้งนี้ เบอร์รีที่เก็บได้จากในมิติไฮเปอร์สเปซ (Hyperspace Berries) จะสามารถนำมาทำโดนัทที่มีประสิทธิภาพสูงกว่าเบอร์รีทั่วไปได้
+            </p>
+
+            <p>
+                หากผู้เล่นเลือกใช้ผลเบอร์รีตามสูตรที่กำหนด อันชาจะสามารถทำ "โดนัทสูตรพิเศษ" ที่ช่วยให้ผู้เล่นพบกับโปเกมอนในตำนาน (Legendary Pokémon) และโปเกมอนมายา (Mythical Pokémon) ในมิติไฮเปอร์สเปซได้ โดยผู้เล่นสามารถพกพาโดนัทติดตัวได้สูงสุดถึง 999 ชิ้น
+            </p>
+
+            <hr class="border-slate-700 my-4">
+
+            <section class="space-y-3">
+                <h2 class="text-xl font-semibold text-amber-400 flex items-center gap-2">
+                    <i class="fa-solid fa-store text-amber-400"></i> ขั้นตอนการสั่งทำโดนัท
+                </h2>
+                <p>
+                    ผู้เล่นสามารถสั่งทำโดนัทได้โดยเข้าไปคุยกับอันชาที่อยู่ในโรงแรม Z แล้วเลือกคำสั่ง <i>"I'd like to make a donut"</i> ในช่วงแรกจะสามารถใส่ผลเบอร์รีผสมกับเนยลูมิโอส (Lumiosian Butter) ได้เพียง 3 ลูกเท่านั้น แต่เมื่อผู้เล่นนำเนยชนิดอื่นๆ กลับมาส่ง ก็จะสามารถเพิ่มจำนวนเบอร์รีที่ใช้ผสมได้สูงสุดถึง 8 ลูกต่อการใช้เนยไฮเปอร์สเปซ (Hyperspace Butter) 1 ครั้ง
+                </p>
+                <p>
+                    สำหรับโดนัทสูตรพิเศษทั้ง 5 ชนิดที่ใช้เปิดรอยแยกมิติไปพบกับโปเกมอนตำนานหรือโปเกมอนมายา จะสามารถสั่งทำได้โดยการคุยกับอันชาแล้วเลือกหัวข้อบทสนทนาที่ถูกต้องหลังจากได้รับวัตถุดิบสำคัญมาแล้ว จากนั้นผู้เล่นจะต้องเลือกผสมผลเบอร์รีให้ตรงตามเงื่อนไขของสูตร อันชาจึงจะเริ่มลงมือทำโดนัทสูตรพิเศษนั้นให้
+                </p>
+            </section>
+        </article>
+
+        <!-- Special Donuts Table Section -->
+        <section class="space-y-4">
+            <h2 class="text-xl font-bold text-slate-100 flex items-center gap-2">
+                <i class="fa-solid fa-star text-amber-400"></i> สูตรโดนัทสำหรับพบโปเกมอนตำนาน / มายา
+            </h2>
+
+            <div class="overflow-x-auto rounded-xl border border-pink-500/40 bg-slate-800 shadow-xl">
+                <table class="w-full text-center border-collapse min-w-[750px] border border-pink-500/30">
+                    <thead>
+                        <tr class="text-slate-900 font-bold text-sm md:text-base divide-x divide-slate-600">
+                            <th class="p-3 bg-pink-400 text-slate-900 min-w-[180px]">โดนัท</th>
+                            <th class="p-3 bg-pink-300 w-14">หวาน (Sweet)</th>
+                            <th class="p-3 bg-orange-300 w-14">เผ็ด (Spicy)</th>
+                            <th class="p-3 bg-amber-300 w-14">เปรี้ยว (Sour)</th>
+                            <th class="p-3 bg-cyan-300 w-14">ขม (Bitter)</th>
+                            <th class="p-3 bg-emerald-300 w-14">สดชื่น (Fresh)</th>
+                            <th class="p-3 bg-pink-400 text-slate-900 min-w-[140px]">วัตถุดิบ</th>
+                            <th class="p-3 bg-pink-400 text-slate-900 min-w-[200px]">เพื่อ</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-700/80 text-sm text-slate-200">
+                        
+                        <!-- Row 1: Bad Dreams Cruller -->
+                        <tr class="hover:bg-slate-700/30 transition-colors">
+                            <td class="p-3 text-left font-medium">
+                                <div class="flex items-center gap-3">
+                                    <img src="images/bad-dreams-cruller.png" alt="Bad Dreams Cruller" class="w-10 h-10 object-contain">
+                                    <span>Bad Dreams Cruller</span>
+                                </div>
+                            </td>
+                            <td class="p-3">310</td>
+                            <td class="p-3">100</td>
+                            <td class="p-3">310</td>
+                            <td class="p-3">40</td>
+                            <td class="p-3">40</td>
+                            <td class="p-3">
+                                <div class="flex items-center justify-center gap-2">
+                                    <img src="images/Bag_Epice_Noire_ZA_Sprite.png" alt="Épice Noire" class="w-8 h-8 object-contain">
+                                    <span class="text-slate-100 font-medium">Epice Noire</span>
+                                </div>
+                            </td>
+                            <td class="p-3 text-slate-100 font-medium">เปิดมิติไฮเปอร์สเปซ Newmoon Nightmare (พื้นที่ดาร์กไร)</td>
+                        </tr>
+
+                        <!-- Row 2: Omega Old-Fashioned Donut -->
+                        <tr class="hover:bg-slate-700/30 transition-colors">
+                            <td class="p-3 text-left font-medium">
+                                <div class="flex items-center gap-3">
+                                    <img src="images/omega-old-fashioned-donut.png" alt="Omega Old-Fashioned Donut" class="w-10 h-10 object-contain">
+                                    <span>Omega Old-Fashioned Donut</span>
+                                </div>
+                            </td>
+                            <td class="p-3">260</td>
+                            <td class="p-3">160</td>
+                            <td class="p-3">160</td>
+                            <td class="p-3">20</td>
+                            <td class="p-3">260</td>
+                            <!-- Merged Ingredient Column -->
+                            <td class="p-3 border-y border-slate-700/80 bg-slate-800/40" rowspan="2">
+                                <div class="flex items-center justify-center gap-2">
+                                    <img src="images/Bag_Hoennian_Salt_ZA_Sprite.png" alt="Hoennian Salt" class="w-8 h-8 object-contain">
+                                    <span class="text-slate-100 font-medium">Hoennian Salt</span>
+                                </div>
+                            </td>
+                            <td class="p-3 text-slate-100 font-medium">เปิดมิติไฮเปอร์สเปซ Desolate Land (พื้นที่กราด้อน)</td>
+                        </tr>
+
+                        <!-- Row 3: Alpha Old-Fashioned Donut -->
+                        <tr class="hover:bg-slate-700/30 transition-colors">
+                            <td class="p-3 text-left font-medium">
+                                <div class="flex items-center gap-3">
+                                    <img src="images/alpha-old-fashioned-donut.png" alt="Alpha Old-Fashioned Donut" class="w-10 h-10 object-contain">
+                                    <span>Alpha Old-Fashioned Donut</span>
+                                </div>
+                            </td>
+                            <td class="p-3">50</td>
+                            <td class="p-3">50</td>
+                            <td class="p-3">210</td>
+                            <td class="p-3">180</td>
+                            <td class="p-3">370</td>
+                            <!-- Ingredient is merged from above -->
+                            <td class="p-3 text-slate-100 font-medium">เปิดมิติไฮเปอร์สเปซ Primordial Sea (พื้นมี่ไคออก้า)</td>
+                        </tr>
+
+                        <!-- Row 4: Delta Old-Fashioned Donut -->
+                        <tr class="hover:bg-slate-700/30 transition-colors">
+                            <td class="p-3 text-left font-medium">
+                                <div class="flex items-center gap-3">
+                                    <img src="images/delta-old-fashioned-donut.png" alt="Delta Old-Fashioned Donut" class="w-10 h-10 object-contain">
+                                    <span>Delta Old-Fashioned Donut</span>
+                                </div>
+                            </td>
+                            <td class="p-3">120</td>
+                            <td class="p-3">40</td>
+                            <td class="p-3">340</td>
+                            <td class="p-3">40</td>
+                            <td class="p-3">390</td>
+                            <td class="p-3">
+                                <div class="flex items-center justify-center gap-2">
+                                    <img src="images/Bag_Arboliva_Oil_ZA_Sprite.png" alt="Arboliva Oil" class="w-8 h-8 object-contain">
+                                    <span class="text-slate-100 font-medium">Arboliva Oil</span>
+                                </div>
+                            </td>
+                            <td class="p-3 text-slate-100 font-medium">เปิดมิติไฮเปอร์สเปซ Sky Pillar (พื้นที่เรควอซ่า)</td>
+                        </tr>
+
+                        <!-- Row 5: Plasma-Glazed Donut -->
+                        <tr class="hover:bg-slate-700/30 transition-colors">
+                            <td class="p-3 text-left font-medium">
+                                <div class="flex items-center gap-3">
+                                    <img src="images/plasma-glazed-donut.png" alt="Plasma-Glazed Donut" class="w-10 h-10 object-contain">
+                                    <span>Plasma-Glazed Donut</span>
+                                </div>
+                            </td>
+                            <td class="p-3">40</td>
+                            <td class="p-3">200</td>
+                            <td class="p-3">400</td>
+                            <td class="p-3">280</td>
+                            <td class="p-3">40</td>
+                            <td class="p-3">
+                                <div class="flex items-center justify-center gap-2">
+                                    <img src="images/Bag_Popping_Candy_ZA_Sprite.png" alt="Popping Candy" class="w-8 h-8 object-contain">
+                                    <span class="text-slate-100 font-medium">Popping Candy</span>
+                                </div>
+                            </td>
+                            <td class="p-3 text-slate-100 font-medium">
+                                เปิดมิติไฮเปอร์สเปซ Rogue Mega Arena (พื้นที่เซราโอร่า)<br>
+                                <span class="text-slate-300 text-xs font-normal">(ระหว่างภารกิจย่อย EX3: "Raging Lightning")</span>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Flavor Score & Star Ranking Section -->
+        <section class="space-y-6">
+            <h2 class="text-2xl font-bold text-amber-400 flex items-center gap-2 border-b border-slate-700 pb-2">
+                <i class="fa-solid fa-ranking-star"></i> ระบบ Flavor Score & Star Ranking (คะแนนรวมและระดับดาว)
+            </h2>
+
+            <div class="bg-slate-800/60 p-5 rounded-xl border border-slate-700/80 shadow-md space-y-4">
+                <p class="text-sm text-slate-200 leading-relaxed">
+                    <strong class="text-amber-300">Flavor Score</strong> (หรือ <i>Flavor Rank</i> ในภาษาญี่ปุ่น) คือ <strong class="text-white">คะแนนรสชาติรวม</strong> ของโดนัท คิดมาจากการนำค่าคะแนนของรสชาติทั้ง 5 ชนิด (Sweet, Spicy, Sour, Bitter, Fresh) ที่อยู่ในโดนัทมารวมกัน โดยจะแสดงผลเป็นตัวเลขคะแนนและระดับดาวตั้งแต่ <strong class="text-amber-400">0 ถึง 5 ดาว</strong> ยิ่งได้ดาวสูง จะยิ่งได้ตัวคูณโบนัสคูณทวีคูณให้กับ <span class="text-sky-300 font-medium">Level Boost</span> และ <span class="text-sky-300 font-medium">Donut Energy</span>
+                </p>
+
+                <!-- Star Rating Threshold Table -->
+                <div class="overflow-x-auto rounded-xl border border-slate-700 bg-slate-900/80">
+                    <table class="w-full text-center border-collapse min-w-[500px]">
+                        <thead>
+                            <tr class="bg-slate-800 text-amber-400 text-sm font-bold border-b border-slate-700">
+                                <th class="p-3">ระดับดาว (Star Rank)</th>
+                                <th class="p-3">คะแนนรสชาติรวม (Flavor Score)</th>
+                                <th class="p-3">ตัวคูณโบนัส (Multiplier)</th>
+                                <th class="p-3">ผลลัพธ์ที่เพิ่มขึ้น</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-800 text-sm">
+                            <tr class="hover:bg-slate-800/40">
+                                <td class="p-3 text-slate-400 font-medium">0 ดาว</td>
+                                <td class="p-3 text-slate-300">0 – 119 คะแนน</td>
+                                <td class="p-3 font-bold text-slate-300">×1.0</td>
+                                <td class="p-3 text-slate-400">ไม่มีโบนัสคูณเพิ่ม</td>
+                            </tr>
+                            <tr class="hover:bg-slate-800/40">
+                                <td class="p-3 text-amber-400 font-medium"><i class="fa-solid fa-star"></i> 1 ดาว</td>
+                                <td class="p-3 font-semibold text-white">120 คะแนนขึ้นไป</td>
+                                <td class="p-3 font-bold text-emerald-400">×1.1</td>
+                                <td class="p-3 text-slate-300">เพิ่มขึ้น +10%</td>
+                            </tr>
+                            <tr class="hover:bg-slate-800/40">
+                                <td class="p-3 text-amber-400 font-medium"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> 2 ดาว</td>
+                                <td class="p-3 font-semibold text-white">240 คะแนนขึ้นไป</td>
+                                <td class="p-3 font-bold text-emerald-400">×1.2</td>
+                                <td class="p-3 text-slate-300">เพิ่มขึ้น +20%</td>
+                            </tr>
+                            <tr class="hover:bg-slate-800/40">
+                                <td class="p-3 text-amber-400 font-medium"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> 3 ดาว</td>
+                                <td class="p-3 font-semibold text-white">350 คะแนนขึ้นไป</td>
+                                <td class="p-3 font-bold text-emerald-400">×1.3</td>
+                                <td class="p-3 text-slate-300">เพิ่มขึ้น +30%</td>
+                            </tr>
+                            <tr class="hover:bg-slate-800/40">
+                                <td class="p-3 text-amber-400 font-medium"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> 4 ดาว</td>
+                                <td class="p-3 font-semibold text-white">700 คะแนนขึ้นไป</td>
+                                <td class="p-3 font-bold text-emerald-400">×1.4</td>
+                                <td class="p-3 text-slate-300">เพิ่มขึ้น +40%</td>
+                            </tr>
+                            <tr class="hover:bg-slate-800/40 bg-amber-500/5">
+                                <td class="p-3 text-amber-300 font-bold"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> 5 ดาว</td>
+                                <td class="p-3 font-bold text-amber-300">960 คะแนนขึ้นไป</td>
+                                <td class="p-3 font-bold text-amber-400">×1.5</td>
+                                <td class="p-3 text-amber-300 font-medium">เพิ่มขึ้นสูงสุด +50%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Flavor Powers Section -->
+        <section class="space-y-6">
+            <h2 class="text-2xl font-bold text-amber-400 flex items-center gap-2 border-b border-slate-700 pb-2">
+                <i class="fa-solid fa-wand-magic-sparkles"></i> ระบบ Flavor Powers (พลังจากรสชาติโดนัท)
+            </h2>
+
+            <!-- Mechanics Summary Card -->
+            <div class="bg-slate-800/60 p-5 rounded-xl border border-slate-700/80 shadow-md space-y-4">
+                <h3 class="text-lg font-semibold text-sky-300 flex items-center gap-2">
+                    <i class="fa-solid fa-gear"></i> หลักการทำงานของ Flavor Powers
+                </h3>
+                <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm text-slate-200">
+                    <li class="bg-slate-900/50 p-3 rounded-lg border border-slate-700/50">
+                        <span class="text-amber-300 font-medium">• รสชาติหลักกำหนดพลัง:</span> รสชาติที่เด่นที่สุดของโดนัทจะเป็นตัวกำหนดพลังที่จะได้รับแบบสุ่ม
+                    </li>
+                    <li class="bg-slate-900/50 p-3 rounded-lg border border-slate-700/50">
+                        <span class="text-amber-300 font-medium">• จำนวนและระดับพลัง:</span> โดนัท 1 ชิ้นมีพลังได้สูงสุด <strong class="text-white">3 อย่าง</strong> และแต่ละพลังมี <strong class="text-white">3 เลเวล (Lv1–Lv3)</strong>
+                    </li>
+                </ul>
+
+                <!-- Level Thresholds -->
+                <div class="bg-slate-900/80 p-4 rounded-lg border border-slate-700/60">
+                    <p class="text-sm font-medium text-slate-300 mb-2">เงื่อนไขการอัปเลเวล (ค่าคะแนนรสชาติเฉพาะชนิด):</p>
+                    <div class="grid grid-cols-3 gap-2 text-center text-xs md:text-sm">
+                        <div class="bg-slate-800 p-2 rounded border border-slate-600">
+                            <span class="text-amber-400 font-bold block">Lv1</span>
+                            <span>105 คะแนน</span>
+                        </div>
+                        <div class="bg-slate-800 p-2 rounded border border-slate-600">
+                            <span class="text-amber-400 font-bold block">Lv2</span>
+                            <span>210 คะแนน</span>
+                        </div>
+                        <div class="bg-slate-800 p-2 rounded border border-slate-600">
+                            <span class="text-amber-400 font-bold block">Lv3</span>
+                            <span>420 คะแนน</span>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-400 mt-3">
+                        <i class="fa-solid fa-circle-info mr-1"></i> พลังบางประเภท เช่น Sparkling Power, Move Power, Resistance Power และ Catching Power จะมีระบุประเภทธาตุ/ไอเทมเฉพาะเจาะจง <code class="bg-slate-800 px-1 py-0.5 rounded text-sky-300">[X]</code> เพิ่มเติม
+                    </p>
+                </div>
+            </div>
+
+            <!-- Flavor Powers Table (Redesigned Version) -->
+            <div class="space-y-4">
+                <h3 class="text-lg font-semibold text-slate-100 flex items-center gap-2">
+                    <i class="fa-solid fa-list-check text-amber-400"></i> รายละเอียดพลังแบ่งตามรสชาติ
+                </h3>
+
+                <div class="overflow-x-auto rounded-xl border border-slate-700/70 bg-slate-800/90 shadow-2xl backdrop-blur-sm">
+                    <table class="w-full text-left border-collapse min-w-[700px] align-middle">
+                        <thead>
+                            <tr class="bg-slate-900/90 text-slate-200 text-sm border-b border-slate-700">
+                                <th class="py-3.5 px-5 w-[22%] text-center font-bold tracking-wide">รสชาติ (Flavor)</th>
+                                <th class="py-3.5 px-5 w-[28%] font-bold tracking-wide">ชื่อพลัง (Power)</th>
+                                <th class="py-3.5 px-5 w-[50%] font-bold tracking-wide">รายละเอียดผลลัพธ์ (Description)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-700/50 text-sm">
+
+                            <!-- Sweet -->
+                            <tr class="hover:bg-slate-700/20 transition-colors">
+                                <td class="py-5 px-4 bg-pink-950/20 border-r border-slate-700/60 align-middle text-center" rowspan="4">
+                                    <div class="flex flex-col items-center justify-center gap-2">
+                                        <div class="leading-tight">
+                                            <span class="font-bold text-pink-400 text-base block">Sweet</span>
+                                            <span class="text-xs text-slate-400 font-normal">(รสหวาน)</span>
+                                        </div>
+                                        <span class="text-[11px] font-medium text-pink-300 bg-pink-900/50 border border-pink-700/50 px-2.5 py-1 rounded-full mt-1">
+                                            เน้นโปเกมอนพิเศษ / ขนาด
+                                        </span>
+                                    </div>
+                                </td>
+                                <td class="py-3.5 px-5 font-semibold text-amber-300 border-b border-slate-700/30">Alpha Power</td>
+                                <td class="py-3.5 px-5 text-slate-200 border-b border-slate-700/30">เพิ่มโอกาสเจอโปเกมอนอัลฟา (Alpha)</td>
+                            </tr>
+                            <tr class="hover:bg-slate-700/20 transition-colors">
+                                <td class="py-3.5 px-5 font-semibold text-amber-300 border-b border-slate-700/30">Sparkling Power: <span class="text-sky-300 font-normal">[X]</span></td>
+                                <td class="py-3.5 px-5 text-slate-200 border-b border-slate-700/30">เพิ่มโอกาสเจอโปเกมอนไชนี่ (Shiny / สีต่าง)</td>
+                            </tr>
+                            <tr class="hover:bg-slate-700/20 transition-colors">
+                                <td class="py-3.5 px-5 font-semibold text-amber-300 border-b border-slate-700/30">Humungo Power</td>
+                                <td class="py-3.5 px-5 text-slate-200 border-b border-slate-700/30">เพิ่มโอกาสเจอโปเกมอนตัวใหญ่</td>
+                            </tr>
+                            <tr class="hover:bg-slate-700/20 transition-colors">
+                                <td class="py-3.5 px-5 font-semibold text-amber-300">Teensy Power</td>
+                                <td class="py-3.5 px-5 text-slate-200">เพิ่มโอกาสเจอโปเกมอนตัวเล็ก</td>
+                            </tr>
+
+                            <!-- Spicy -->
+                            <tr class="hover:bg-slate-700/20 transition-colors border-t-2 border-slate-700">
+                                <td class="py-5 px-4 bg-orange-950/20 border-r border-slate-700/60 align-middle text-center" rowspan="4">
+                                    <div class="flex flex-col items-center justify-center gap-2">
+                                        <div class="leading-tight">
+                                            <span class="font-bold text-orange-400 text-base block">Spicy</span>
+                                            <span class="text-xs text-slate-400 font-normal">(รสเผ็ด)</span>
+                                        </div>
+                                        <span class="text-[11px] font-medium text-orange-300 bg-orange-900/50 border border-orange-700/50 px-2.5 py-1 rounded-full mt-1">
+                                            เน้นบัฟโจมตี / ความเร็ว
+                                        </span>
+                                    </div>
+                                </td>
+                                <td class="py-3.5 px-5 font-semibold text-amber-300 border-b border-slate-700/30">Attack Power</td>
+                                <td class="py-3.5 px-5 text-slate-200 border-b border-slate-700/30">เพิ่มค่าพลังโจมตีทางกายภาพ (Attack) ของโปเกมอน</td>
+                            </tr>
+                            <tr class="hover:bg-slate-700/20 transition-colors">
+                                <td class="py-3.5 px-5 font-semibold text-amber-300 border-b border-slate-700/30">Sp. Atk Power</td>
+                                <td class="py-3.5 px-5 text-slate-200 border-b border-slate-700/30">เพิ่มค่าพลังโจมตีพิเศษ (Special Attack) ของโปเกมอน</td>
+                            </tr>
+                            <tr class="hover:bg-slate-700/20 transition-colors">
+                                <td class="py-3.5 px-5 font-semibold text-amber-300 border-b border-slate-700/30">Speed Power</td>
+                                <td class="py-3.5 px-5 text-slate-200 border-b border-slate-700/30">เพิ่มค่าความเร็ว (Speed) ของโปเกมอน</td>
+                            </tr>
+                            <tr class="hover:bg-slate-700/20 transition-colors">
+                                <td class="py-3.5 px-5 font-semibold text-amber-300">Move Power: <span class="text-sky-300 font-normal">[X]</span></td>
+                                <td class="py-3.5 px-5 text-slate-200">เพิ่มความรุนแรงของท่าโจมตีเฉพาะธาตุ</td>
+                            </tr>
+
+                            <!-- Sour -->
+                            <tr class="hover:bg-slate-700/20 transition-colors border-t-2 border-slate-700">
+                                <td class="py-5 px-4 bg-amber-950/20 border-r border-slate-700/60 align-middle text-center" rowspan="4">
+                                    <div class="flex flex-col items-center justify-center gap-2">
+                                        <div class="leading-tight">
+                                            <span class="font-bold text-amber-400 text-base block">Sour</span>
+                                            <span class="text-xs text-slate-400 font-normal">(รสเปรี้ยว)</span>
+                                        </div>
+                                        <span class="text-[11px] font-medium text-amber-300 bg-amber-900/50 border border-amber-700/50 px-2.5 py-1 rounded-full mt-1">
+                                            เน้นไอเทม & พลังเมก้า
+                                        </span>
+                                    </div>
+                                </td>
+                                <td class="py-3.5 px-5 font-semibold text-amber-300 border-b border-slate-700/30">Big Haul Power</td>
+                                <td class="py-3.5 px-5 text-slate-200 border-b border-slate-700/30">เพิ่มจำนวนไอเทมที่จะได้รับ</td>
+                            </tr>
+                            <tr class="hover:bg-slate-700/20 transition-colors">
+                                <td class="py-3.5 px-5 font-semibold text-amber-300 border-b border-slate-700/30">Item Power: <span class="text-sky-300 font-normal">[X]</span></td>
+                                <td class="py-3.5 px-5 text-slate-200 border-b border-slate-700/30">เพิ่มโอกาสดรอปไอเทมเฉพาะหมวดหมู่ (เช่น ผลเบอร์รี, ลูกอม, เหรียญ, บอล, ไอเทมพิเศษ, สมบัติ)</td>
+                            </tr>
+                            <tr class="hover:bg-slate-700/20 transition-colors">
+                                <td class="py-3.5 px-5 font-semibold text-amber-300 border-b border-slate-700/30">Mega Power Charging</td>
+                                <td class="py-3.5 px-5 text-slate-200 border-b border-slate-700/30">เพิ่มอัตราการสะสมพลังเมก้า</td>
+                            </tr>
+                            <tr class="hover:bg-slate-700/20 transition-colors">
+                                <td class="py-3.5 px-5 font-semibold text-amber-300">Mega Power Conservation</td>
+                                <td class="py-3.5 px-5 text-slate-200">เพิ่มระยะเวลาในการเปลี่ยนร่างเมก้าให้ยาวนานขึ้น</td>
+                            </tr>
+
+                            <!-- Bitter -->
+                            <tr class="hover:bg-slate-700/20 transition-colors border-t-2 border-slate-700">
+                                <td class="py-5 px-4 bg-cyan-950/20 border-r border-slate-700/60 align-middle text-center" rowspan="3">
+                                    <div class="flex flex-col items-center justify-center gap-2">
+                                        <div class="leading-tight">
+                                            <span class="font-bold text-cyan-400 text-base block">Bitter</span>
+                                            <span class="text-xs text-slate-400 font-normal">(รสขม)</span>
+                                        </div>
+                                        <span class="text-[11px] font-medium text-cyan-300 bg-cyan-900/50 border border-cyan-700/50 px-2.5 py-1 rounded-full mt-1">
+                                            เน้นพลังการป้องกัน
+                                        </span>
+                                    </div>
+                                </td>
+                                <td class="py-3.5 px-5 font-semibold text-amber-300 border-b border-slate-700/30">Defense Power</td>
+                                <td class="py-3.5 px-5 text-slate-200 border-b border-slate-700/30">เพิ่มค่าพลังป้องกันทางกายภาพ (Defense) ของโปเกมอน</td>
+                            </tr>
+                            <tr class="hover:bg-slate-700/20 transition-colors">
+                                <td class="py-3.5 px-5 font-semibold text-amber-300 border-b border-slate-700/30">Sp. Def Power</td>
+                                <td class="py-3.5 px-5 text-slate-200 border-b border-slate-700/30">เพิ่มค่าพลังป้องกันพิเศษ (Special Defense) ของโปเกมอน</td>
+                            </tr>
+                            <tr class="hover:bg-slate-700/20 transition-colors">
+                                <td class="py-3.5 px-5 font-semibold text-amber-300">Resistance Power: <span class="text-sky-300 font-normal">[X]</span></td>
+                                <td class="py-3.5 px-5 text-slate-200">ลดความเสียหายที่ได้รับจากท่าโจมตีเฉพาะธาตุ</td>
+                            </tr>
+
+                            <!-- Fresh -->
+                            <tr class="hover:bg-slate-700/20 transition-colors border-t-2 border-slate-700">
+                                <td class="py-5 px-4 bg-emerald-950/20 border-r border-slate-700/60 align-middle text-center" rowspan="2">
+                                    <div class="flex flex-col items-center justify-center gap-2">
+                                        <div class="leading-tight">
+                                            <span class="font-bold text-emerald-400 text-base block">Fresh</span>
+                                            <span class="text-xs text-slate-400 font-normal">(รสสดชื่น)</span>
+                                        </div>
+                                        <span class="text-[11px] font-medium text-emerald-300 bg-emerald-900/50 border border-emerald-700/50 px-2.5 py-1 rounded-full mt-1">
+                                            เน้นจับ & เจอโปเกมอน
+                                        </span>
+                                    </div>
+                                </td>
+                                <td class="py-3.5 px-5 font-semibold text-amber-300 border-b border-slate-700/30">Catching Power: <span class="text-sky-300 font-normal">[X]</span></td>
+                                <td class="py-3.5 px-5 text-slate-200 border-b border-slate-700/30">เพิ่มอัตราการจับโปเกมอนที่มีท่าโจมตีธาตุ</td>
+                            </tr>
+                            <tr class="hover:bg-slate-700/20 transition-colors">
+                                <td class="py-3.5 px-5 font-semibold text-amber-300">Encounter Power</td>
+                                <td class="py-3.5 px-5 text-slate-200">เพิ่มจำนวนการปรากฏตัวของโปเกมอนป่า</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
